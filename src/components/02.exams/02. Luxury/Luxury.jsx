@@ -17,6 +17,8 @@ export default function Luxury() {
     return (
         <section>
 
+            <h1>test !</h1>
+
             <header 
             style={{ backgroundImage: `url(${luxuryHome})` }}
             className='flex flex-col justify-center items-center'>
