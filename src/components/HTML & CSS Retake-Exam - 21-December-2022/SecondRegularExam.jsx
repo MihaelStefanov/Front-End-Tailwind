@@ -1,5 +1,4 @@
 import { Link } from "react-router"
-import ExamCard from "../examsCards/examCard";
 
 export default function SecondRegularExam() {
 
