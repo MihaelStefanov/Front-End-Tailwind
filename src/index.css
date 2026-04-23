@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+body {
+    background-color: rgb(208, 211, 213);
+}
+
+tr td {
+    padding: 0.5em; 
+}
+
+tr {
+    background-color: #CCCBCB
+}
+
+tr:nth-child(even) {
+    background-color: #81D8A0;
+
+}
