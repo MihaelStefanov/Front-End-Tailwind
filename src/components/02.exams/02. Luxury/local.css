@@ -1,0 +1,49 @@
+
+body {
+    background-color: white;
+}
+
+h1 {
+    font-size: 1.3em;
+}
+
+.nav {
+    list-style: none;
+
+}
+
+.nav li {
+    width: 100%;
+    display: block;
+    border-top: 1px solid white;
+    padding-bottom: 2em;
+    padding-top: 0.3em;
+    text-align: center;
+}
+
+.nav a {
+  text-decoration: none !important;
+}
+
+.gallery-p {
+    margin-bottom: 0.5em;
+    font-style: oblique ;
+    font-size: 0.9em;
+}
+
+.gallery-p + img {
+    margin-bottom: 1.5em;
+}
+
+/* .luxury-portfolio {
+    position: relative;
+} */
+
+.luxury-portfolio::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid black;
+    position: absolute;
+    left: 0px;
+    right: 4em;
+}
