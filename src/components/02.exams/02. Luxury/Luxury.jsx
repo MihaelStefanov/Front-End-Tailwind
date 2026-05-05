@@ -19,7 +19,7 @@ export default function Luxury() {
     return (
 
         <>
-            <section>
+            <section className='bg-white'>
 
                 <header
                     style={{
@@ -61,37 +61,41 @@ export default function Luxury() {
 
                 <section
                     style={{ backgroundImage: `url(${backgroundBlog})` }}
-                    className='flex flex-col justify-center items-center p-[1.5em]'>
-                    <h1 className='luxury-portfolio mb-[1.5em] text-white text-2xl self-start ml-[2em]'>LUXURY PORTFOLIO</h1>
+                    className='flex flex-col justify-center items-center p-[1.5em] leading-[1.2]'>
+                    <h1 className='luxury-portfolio mb-[1.5em] text-white text-2xl self-start ml-[1.5em]'>LUXURY PORTFOLIO</h1>
 
-                    <div className='bg-white p-[1em]'>
-                        <h1 className='font-bold mb-[1em]'>Luxury Portfolio and mansion global host "A  night in soho" </h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iusto velit impedit veniam vero, perspiciatis quo ratione, odio magni natus cupiditate dolores assumenda, beatae reiciendis nihil numquam dicta quod modi?</p>
+                    <div className='bg-white p-[0.8em]'>
+                        <h1 className='font-bold mb-[1em] mt-[0.5em] mb'>Luxury Portfolio and mansion global host "A  night in soho" </h1>
+                        <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iusto velit impedit veniam vero, perspiciatis quo ratione, odio magni natus cupiditate dolores assumenda, beatae reiciendis nihil numquam dicta quod modi?</p>
                         <button className='border-[1px] p-[0.3em] bg-blue-400 text-white mt-[2em]'>Read more...</button>
                     </div>
                 </section>
 
-                <section className='flex flex-col justify-center items-center p-[2em]'>
-                    <h1 className=''>Luxury Portfolio Magazine</h1>
+                <section className='flex flex-col justify-center items-center my-[2em]'>
+                    <h1 className='luxury-portfolio-magazine self-start ml-[0.8em] mb-[1em]'>Luxury Portfolio Magazine</h1>
 
                     <div className='flex flex-col justify-center items-center'>
-                        <img className='w-[20em]' src={magazine} alt="" />
+                        <div className='px-[2em]'>
+                            <img className='w-[20em] border-[1px] pl-[1.5em] mb-[2em]' src={magazine} alt="" />
+                        </div>
 
-                        <h1>Look Inside</h1>
-                        <img className='w-[28em] h-[10em]' src={room} alt="" />
+                        <h1 className='mb-[0.4em] font-bold'>Look Inside</h1>
+                        <div className='px-[1em] mb-[0.4em]'>
+                            <img className='w-[28em] h-[10em]' src={room} alt="" />
+                        </div>
 
-                        <h1>Luxury expounded on far & wide</h1>
+                        <h1 className='font-bold mb-[2em] !text-[1em]'>LUXURY EXPOUNDED ON FAR & WIDE</h1>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eius consectetur rem repudiandae delectus, rerum placeat illo temporibus ex doloremque sapiente asperiores labore, aliquid explicabo. Facilis perferendis fugiat minus. Iusto!</p>
+                        <p className='block w-[85%] text-center mb-[2.5em] leading-[1.2]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eius consectetur rem repudiandae delectus, rerum placeat illo temporibus ex doloremque sapiente asperiores labore, aliquid explicabo. Facilis perferendis fugiat minus. Iusto!</p>
 
-                        <button>View the magazine</button>
+                        <button className='border-[1px] p-[0.3em] bg-blue-400 text-white mb-[2em]'>View the magazine</button>
 
                     </div>
 
                 </section>
 
                 <footer className='text-center p-[1.5em] bg-black text-white'>
-                    <p>Copyright © {new Date().getFullYear()} Luxury Home. All Rights Reserved.</p>
+                    <p className='text-[0.8em]'>Copyright © {new Date().getFullYear()} Luxury Home. All Rights Reserved.</p>
                 </footer>
 
             </section>
