@@ -115,16 +115,18 @@ export default function Luxury() {
                     className='flex flex-col justify-center items-center p-[1.5em] leading-[1.2]'>
                     <h1 className='luxury-portfolio mb-[1.5em] text-white text-2xl self-start ml-[1.5em]'>LUXURY PORTFOLIO</h1>
 
-                    <div className='lg:flex lg:px-[1em] lg:gap-[4em]'>
+                    <div className='lg:flex lg:px-[1em] lg:gap-[4em] justify-evenly'>
 
-                        <div className='bg-white p-[0.8em] lg:w-[60%]'>
+                        <div className=' bg-white p-[0.8em] self-start
+                        lg:w-[40%] lg:text-[1.1em]
+                        '>
                             <h1 className='font-bold mb-[1em] mt-[0.5em] mb'>Luxury Portfolio and mansion global host "A  night in soho" </h1>
                             <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iusto velit impedit veniam vero, perspiciatis quo ratione, odio magni natus cupiditate dolores assumenda, beatae reiciendis nihil numquam dicta quod modi?</p>
                             <button className='border-[1px] p-[0.3em] bg-blue-400 text-white mt-[2em] block'>Read more...</button>
                         </div>
 
                         <div className='luxury-portfolio-img-wrapper rounded-[50%] overflow-hidden
-                        hidden lg:block bg-cover bg-center bg-no-repeat'>
+                        hidden lg:w-[40%] lg:block bg-cover bg-center bg-no-repeat'>
                             <img src={blogPic} alt="" className="w-full h-full object-cover" />
                         </div>
                     </div>
@@ -134,7 +136,8 @@ export default function Luxury() {
                 <section className='flex flex-col justify-center items-center my-[2em]'>
                     <h1 className='luxury-portfolio-magazine self-start ml-[0.8em] mb-[1em]'>Luxury Portfolio Magazine</h1>
 
-                    <div className='flex flex-col justify-center items-center lg:flex-row lg:justify-between'>
+                    <div className='flex flex-col justify-center items-center lg:flex-row
+                    lg:justify-between '>
                         <div className='
                         px-[2em]
                         lg:p-[0em]
@@ -149,9 +152,10 @@ export default function Luxury() {
                         <div className='flex flex-col justify-center items-center
                         lg:w-[25%]
                         lg:mr-[6em]
-                        lg:self-start
+                        lg:justify-start lg:self-start items-start
+                        
                         '>
-                            <h1 className='mb-[0.4em] font-bold'>Look Inside</h1>
+                            <h1 className='mb-[0.4em] font-bold self-center'>Look Inside</h1>
 
                             <div className='px-[1em] mb-[0.4em]
                             lg:p-[0em] lg:px-[0em] lg:mb-[1em]'>
