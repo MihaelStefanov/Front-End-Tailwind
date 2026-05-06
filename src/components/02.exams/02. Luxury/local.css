@@ -1,4 +1,3 @@
-
 body {
     background-color: white;
 }
@@ -22,17 +21,44 @@ h1 {
 }
 
 .nav a {
-  text-decoration: none !important;
+    text-decoration: none !important;
+}
+
+.gallery-item {
+    display: flex;
+    /* gap: 1em; */
+    flex-direction: column;
+    margin-bottom: 1.5em;
 }
 
 .gallery-p {
     margin-bottom: 0.5em;
-    font-style: oblique ;
+    font-style: oblique;
     font-size: 0.9em;
+    text-align: center;
 }
 
-.gallery-p + img {
-    margin-bottom: 1.5em;
+
+.img-wrapper {
+    width: 15em;
+    height: 10em;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+.gallery-btn {
+    border: 1px solid #ccc;
+    padding: 0.3em 0.5em 0.3em 0.5em;
+    align-self: center;
+    display: none;
 }
 
 /* .luxury-portfolio {
@@ -55,4 +81,71 @@ h1 {
     position: absolute;
     left: 0px;
     right: 4em;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .nav li {
+        width: 40%;
+        /* display: block; */
+        border-top: 1px solid white;
+        padding-bottom: 2em;
+        padding-top: 0.3em;
+        text-align: start;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav li:nth-child(even) {
+        text-align: end;
+    }
+
+    .gallery-wrapper div:nth-child(2) {
+        align-self: stretch;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    h1 {
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .nav li {
+        width: 100%;
+        /* display: block; */
+        border-top: 1px solid white;
+        padding-bottom: 2em;
+        padding-top: 0.3em;
+        text-align: start;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .img-wrapper {
+        width: 18em;
+        height: 11em;
+        overflow: hidden;
+        margin-bottom: 1em;
+    }
+
+    .img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* zoom + crop */
+        object-position: center;
+        /* център */
+    }
+
+    .gallery-btn {
+        display: block;
+    }
+
 }

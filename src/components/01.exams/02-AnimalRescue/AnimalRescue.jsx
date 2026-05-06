@@ -32,7 +32,7 @@ export default function AnimalRescue() {
                     >
                     </div>
                     <header className="flex justify-center">
-                        <ul className="flex items-center gap-[1em] text-[0.8em] text-white">
+                        <ul className="flex items-center gap-[1em] text-[0.8em] text-white md:grid md:grid-cols-2" >
                             <li>Home</li>
                             <li>Pages</li>
                             <li>Animals</li>
