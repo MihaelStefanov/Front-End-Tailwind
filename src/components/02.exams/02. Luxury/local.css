@@ -107,15 +107,15 @@ h1 {
 }
 
 @media (min-width: 1024px) {
-
-    h1 {
+/* 
+    header h1 {
         font-size: 1.6em;
         font-weight: bold;
     }
 
     p {
         font-size: 1.2em;
-    }
+    } */
 
     .nav li {
         width: 100%;
@@ -148,4 +148,12 @@ h1 {
         display: block;
     }
 
+    .luxury-portfolio::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid black;
+    position: absolute;
+    left: 0px;
+    right: 4em;
+}
 }
