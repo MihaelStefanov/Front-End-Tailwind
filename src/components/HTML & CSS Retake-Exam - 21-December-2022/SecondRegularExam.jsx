@@ -6,7 +6,7 @@ export default function SecondRegularExam() {
     const cardData = [
         { to: '/Financial-Fervices', name: 'Financial Services', tag: '01. exam exercise' },
         { to: '/Luxury', name: 'Luxury', tag: '02. exam exercise' },
-        { to: '/Musicfy', name: 'Musicfy', tag: '03. exam exercise' },
+        { to: '/Fees', name: 'Fees', tag: '03. exam exercise' },
     ]
 
     const cardClass =

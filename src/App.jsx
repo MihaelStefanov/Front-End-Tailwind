@@ -11,6 +11,7 @@ import Musicfy from "./components/01.exams/03-Musicfy/Musicfy";
 import SecondRegularExam from "./components/HTML & CSS Retake-Exam - 21-December-2022/SecondRegularExam";
 import FinancialServices from "./components/02.exams/01.Financial Services/FinancialServices";
 import Luxury from "./components/02.exams/02. Luxury/Luxury";
+import Fees from "./components/02.exams/03.Fees/Fees";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -32,6 +33,7 @@ function App() {
         <Route path="/HTML & CSS Retake-Exam - 21-December-2022" element={<SecondRegularExam />} />
         <Route path="/Financial-Fervices" element={<FinancialServices />} />
         <Route path="/Luxury" element={<Luxury />} />
+        <Route path="/Fees" element={<Fees />} />
       </Routes>
 
     </>
