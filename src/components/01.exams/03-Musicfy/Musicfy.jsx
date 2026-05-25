@@ -83,14 +83,16 @@ export default function Musicfy() {
 
                 <p className='mb-[1.8em]'>Go Premium and enjoy full control of your listening. Cncel anytime.</p>
 
-                <table className='w-[960px] overflow-hidden rounded-[0.3em] ' >
-                    <tr> <td>Ad-free music listening</td> <td><img src={checkImg} className="w-4 h-4 inline-block" /></td> <td><img src={crossImg} className="w-4 h-4 inline-block" /></td></tr>
-                    <tr> <td>Ad-free music listening</td> <td><img src={checkImg} className="w-4 h-4 inline-block" /></td> <td><img src={crossImg} className="w-4 h-4 inline-block" /></td></tr>
-                    <tr> <td>Ad-free music listening</td> <td><img src={checkImg} className="w-4 h-4 inline-block" /></td> <td><img src={crossImg} className="w-4 h-4 inline-block" /></td></tr>
-                    <tr> <td>Ad-free music listening</td> <td><img src={checkImg} className="w-4 h-4 inline-block" /></td> <td><img src={crossImg} className="w-4 h-4 inline-block" /></td></tr>
-                    <tr> <td>Ad-free music listening</td> <td><img src={checkImg} className="w-4 h-4 inline-block" /></td> <td><img src={crossImg} className="w-4 h-4 inline-block" /></td></tr>
-                    <tr> <td>Ad-free music listening</td> <td><img src={checkImg} className="w-4 h-4 inline-block" /></td> <td><img src={crossImg} className="w-4 h-4 inline-block" /></td></tr>
-                </table>
+                <div>
+                    <table className='w-[960px] overflow-hidden rounded-[0.3em] ' >
+                        <tr> <td>Ad-free music listening</td> <td><img src={checkImg} className="w-4 h-4 inline-block" /></td> <td><img src={crossImg} className="w-4 h-4 inline-block" /></td></tr>
+                        <tr> <td>Ad-free music listening</td> <td><img src={checkImg} className="w-4 h-4 inline-block" /></td> <td><img src={crossImg} className="w-4 h-4 inline-block" /></td></tr>
+                        <tr> <td>Ad-free music listening</td> <td><img src={checkImg} className="w-4 h-4 inline-block" /></td> <td><img src={crossImg} className="w-4 h-4 inline-block" /></td></tr>
+                        <tr> <td>Ad-free music listening</td> <td><img src={checkImg} className="w-4 h-4 inline-block" /></td> <td><img src={crossImg} className="w-4 h-4 inline-block" /></td></tr>
+                        <tr> <td>Ad-free music listening</td> <td><img src={checkImg} className="w-4 h-4 inline-block" /></td> <td><img src={crossImg} className="w-4 h-4 inline-block" /></td></tr>
+                        <tr> <td>Ad-free music listening</td> <td><img src={checkImg} className="w-4 h-4 inline-block" /></td> <td><img src={crossImg} className="w-4 h-4 inline-block" /></td></tr>
+                    </table>
+                </div>
             </section>
             <footer className='text-center p-[1.5em] bg-black text-white'>
                 <p>© {new Date().getFullYear()} Musicfy. All Rights Reserved.</p>

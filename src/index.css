@@ -16,3 +16,16 @@ tr:nth-child(even) {
     background-color: #81D8A0;
 
 }
+
+.table-online tr {
+    background-color: #CCCBCB
+}
+
+.table-online tr:nth-child(even) {
+    background-color: #e8e4e4;
+
+}
+
+.table-online tr td {
+    padding: 0.8em; 
+}
