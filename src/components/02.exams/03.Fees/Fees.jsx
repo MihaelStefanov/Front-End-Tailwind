@@ -4,9 +4,14 @@ import calculator from './images/calculator-icon.svg'
 import checkImg from './images/check.svg'
 import crossImg from './images/cross.svg'
 
-
 export default function Fees() {
 
+    const cardStyle = 'flex flex-col overflow-hidden w-[480px] rounded-[0.8em] shadow-[0_4px_16px_rgba(0,0,0,0.15)]';
+    const cardText =  'flex flex-col flex-1 bg-white px-[2em] pt-[1.5em] items-center text-center pb-[0.8em] gap-[1em]'
+    const cardFooterStyle = 'text-white text-center p-[1em] mt-auto h-[130px] items-center  '   
+
+    const h1Style = 'text-[2em]'; 
+    const pStyle = 'text-[1.2em] opacity-90';
 
     return (
         <section className=' bg-white'>
@@ -35,12 +40,12 @@ export default function Fees() {
 
                 <div className='flex items-stretch justify-center py-[0em] px-[3em] gap-[2em] z-[10em] absolute bottom-[-10em]'>
 
-                    <div className='flex flex-col overflow-hidden w-[480px] rounded-[0.8em] shadow-[0_4px_16px_rgba(0,0,0,0.15)]'>
-                        <div className='flex flex-col flex-1 bg-white px-[2em] pt-[1.5em] items-center'>
-                            <h1 className='text-[1.8em] mb-[0.2em] font-bold opacity-65'>Design Basics</h1>
-                            <p className='text-[1.2em]'>Подготвителен курс</p>
+                    <div className={cardStyle}>
+                        <div className={`${cardText} gap-[2em]`}>
+                            <h1 className='text-[1.8em] font-bold opacity-65'>Design Basics</h1>
+                            <p className={pStyle}>Подготвителен курс</p>
 
-                            <button className='text-white text-center font-bold rounded-[2em] text-[1.3em] bg-[#9A5DC6] px-[2.5em] py-[0.8em] my-[2.5em]
+                            <button className='text-white text-center font-bold rounded-[2em] text-[1.3em] bg-[#9A5DC6] px-[2.5em] py-[0.8em] 
                             shadow-[0_4px_16px_rgba(0,0,0,0.15)]
                             '>Кандидатствай</button>
 
@@ -49,55 +54,54 @@ export default function Fees() {
                             </ul> */}
                         </div>
 
-                        <footer className='bg-gradient-to-r from-[#179447] via-[#1CB054] to-[#2fd470]
-                         text-[1.3em] text-white text-center p-[1em] mt-auto'>
-                            <h1 className='text-[1.5em]'>Безплатно</h1>
-                            <p>* 50 лв. такса за приемен изпит</p>
+                        <footer className={`${cardFooterStyle} bg-gradient-to-r from-[#179447] via-[#1CB054] to-[#2fd470]`}>
+                            <h1 className={h1Style}>Безплатно</h1>
+                            <p className={pStyle}>* 50 лв. такса за приемен изпит</p>
                         </footer>
                     </div>
 
-                    <div className='flex flex-col  overflow-hidden w-[480px] rounded-[0.8em] shadow-[0_4px_16px_rgba(0,0,0,0.15)]'>
-                        <div className='flex flex-col bg-white px-[1.5em] pt-[1.5em] mb-[1em] items-center text-center'>
+                    <div className={`${cardStyle}
+                    `}>
+                        <div className={`${cardText}`}>
                             <h1 className='text-[1.8em] mb-[0.5em] font-bold opacity-65'>Fundamentals Program</h1>
-                            <p className='text-[1.2em] mb-[1em]'>Курсистите ще продължат обучението си в 6 фундаментални курса, покриващи основните сфери на дизайна и визуализацията.</p>
-                            <p className='text-[1.2em] mb-[1em] '>Възможност за заплащане на таксата на 2 равни вноски.</p>
+                            <p className={pStyle}>Курсистите ще продължат обучението си в 6 фундаментални курса, покриващи основните сфери на дизайна и визуализацията.</p>
+                            <p className={pStyle}>Възможност за заплащане на таксата на 2 равни вноски.</p>
                         </div>
 
-                        <footer className='flex bg-gradient-to-r from-[#3d6080] to-[#6fa0c8] text-white p-6
+                        <footer className={`${cardFooterStyle} flex mt-auto bg-gradient-to-r from-[#3d6080] to-[#6fa0c8] 
                         text-[1.3em] text-white text-center px-[0.4em] py-auto
-                        justify-between gap-[0.3em]
-                        '>
+                        justify-between gap-[0.3em] `}>
                             <div className='w-[49%]'>
-                                <h1 className='text-[1.3em]'>680 лв.</h1>
-                                <p>присъствено за 6 курса</p>
+                                <h1 className={h1Style}>680 лв.</h1>
+                                <p className={pStyle} >присъствено за 6 курса</p>
                             </div>
                             <div className='border-r border-white/90 h-[]'></div>
                             <div className='w-[49%] items-end'>
-                                <h1 className='text-[1.3em]'>620 лв.</h1>
-                                <p>онлайн за 6 курса</p>
+                                <h1 className={h1Style}>620 лв.</h1>
+                                <p className={pStyle}>онлайн за 6 курса</p>
                             </div>
                         </footer>
                     </div>
 
-                    <div className='flex flex-col  overflow-hidden w-[480px] rounded-[0.8em] shadow-[0_4px_16px_rgba(0,0,0,0.15)]'>
-                        <div className='flex flex-col bg-white px-[2em] pt-[1.5em] items-center text-center'>
+                    <div className={cardStyle}>
+                        <div className={`${cardText}`}>
                             <h1 className='text-[1.8em] mb-[0.5em] font-bold opacity-65'>Professional Program</h1>
                             <p className='text-[1.2em]  mb-[1em]'>Курсистите преминават към обучение в професионалните модули, специализирайки се в избраното професионално направление.</p>
-                            <p className='text-[1.2em] mb-[1em]'>Обявената такса е преференциална за курсистите от Fundamentals Program.</p>
+                            <p className='text-[1.2em] mb-[0em]'>Обявената такса е преференциална за курсистите от Fundamentals Program.</p>
                         </div>
 
-                        <footer className='flex bg-gradient-to-r from-[#4a3a8a] via-[#604EB8] to-[#7e6fd4] p-6
-                        text-[1.3em] text-white text-center px-[0.4em] py-auto
-                        mt-[auto] justify-between gap-[0.3em]
-                        '>
+                        <footer className={`flex bg-gradient-to-r from-[#4a3a8a] via-[#604EB8] to-[#7e6fd4] p-6
+                        ${cardFooterStyle}  px-[0.5em] 
+                        justify-between gap-[0.3em]
+                        `}>
                             <div className='w-[49%]'>
-                                <h1 className='text-[1.3em]'>330 лв.</h1>
-                                <p>присъствено за модул</p>
+                                <h1 className={h1Style}>330 лв.</h1>
+                                <p className={pStyle}>присъствено за модул</p>
                             </div>
                             <div className='border-r border-white/90'></div>
                             <div className='w-[49%] items-end'>
-                                <h1 className='text-[1.3em]'>290 лв.</h1>
-                                <p>онлайн за модул</p>
+                                <h1 className={h1Style}>290 лв.</h1>
+                                <p className={pStyle}>онлайн за модул</p>
                             </div>
                         </footer>
 
