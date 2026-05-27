@@ -29,3 +29,7 @@ tr:nth-child(even) {
 .table-online tr td {
     padding: 0.8em; 
 }
+
+.table-online tr {
+    gap: 4em;
+}
